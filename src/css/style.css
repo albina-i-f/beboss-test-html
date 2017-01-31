@@ -1,0 +1,377 @@
+/* ------------------------ Общие настройки ------------------- */
+
+* { /* Сброс стилей */
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background: #f2ecf7 url(../img/bg.gif) repeat;
+	font: 16px/24px Arial, Verdana, sans-serif;
+	color: #000;
+}
+
+#wrap {
+	min-height: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+
+header, .content {
+	margin: 0 auto;
+}
+
+a {
+	color: #396ea9;
+}
+
+/* Заголовки */
+
+h1, h2 {
+	color: #fff;
+}
+
+h1 {
+	font: bold 50px Arial, Verdana, sans-serif;
+	padding-top: 18px;
+}
+
+h2 {
+	font: 30px/60px Arial, Verdana, sans-serif;
+	padding-top: 49px;
+}
+
+h3 {
+	font: 24px/24px Arial, Verdana, sans-serif;
+}
+
+h4 {
+	font: bold 16px/24px Arial, Verdana, sans-serif;
+	padding-bottom: 29px;
+}
+
+/* Списки */
+
+ul {
+	margin: 13px 0 29px 15px;
+}
+
+/* Формы */
+
+input, button {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+			border-radius: 3px;
+	height: 40px;
+	font: inherit;
+}
+
+input {
+	width: 360px;
+	border: 1px solid #a6acb2;
+	padding: 0 15px;
+}
+
+input:focus {
+	outline: none;
+	-webkit-box-shadow: 0 0 10px rgba(39,199,252,1);
+	   -moz-box-shadow: 0 0 10px rgba(39,199,252,1);
+			box-shadow: 0 0 10px rgba(39,199,252,1);
+}
+
+input::-ms-clear { /* Скрывается крестик автоматической очистки поля ввода в браузерах Internet Explorer */
+   display: none;
+}
+
+input::-webkit-input-placeholder {
+	color: #b2b2b2;
+}
+
+input::-ms-input-placeholder {
+	color: #b2b2b2;
+}
+
+input:-ms-input-placeholder {
+	color: #b2b2b2;
+}
+
+input::-moz-placeholder {
+	color: #b2b2b2;
+	opacity: 1;
+}
+
+input:-moz-placeholder {
+	color: #b2b2b2;
+	opacity: 1;
+}
+
+input:focus::-webkit-input-placeholder {
+	color: transparent;
+}
+
+input:focus::-ms-input-placeholder {
+	color: transparent;
+}
+
+input:focus:-ms-input-placeholder {
+	color: transparent;
+}
+
+input:focus::-moz-placeholder {
+	color: transparent;
+}
+
+input:focus:-moz-placeholder {
+	color: transparent;
+}
+
+.placeholdersjs { /* Стиль для placeholder, который задаётся плагином placeholders.js (http://jamesallardice.github.io/Placeholders.js/) для Internet Explorer 9-й версии и ниже */
+	color: #b2b2b2;
+	font-size: 14px;
+}
+
+input:-webkit-autofill { /* Задаётся большая внутренняя тень для того, чтобы перекрыть цвет фона автозаполненного поля в Google Chrome */
+	-webkit-box-shadow: inset 0 0 0 1000px rgba(255,255,255,1);
+}
+
+button {
+	width: 160px;
+	outline: none;
+}
+
+/* ------------------------ Шапка ------------------- */
+
+header {
+	width: 1003px;
+	height: 482px;
+	position: relative;
+}
+
+.logo {
+	padding: 20px 0 13px;
+}
+
+.back {
+	width: 100%;
+	height: 420px;
+	background: #000 url(../img/header_pic.png) center no-repeat;  
+	text-align: center;
+	-webkit-border-radius: 4px 4px 0 0;
+	   -moz-border-radius: 4px 4px 0 0;
+			border-radius: 4px 4px 0 0;
+}
+
+.mac {
+	width: 100%;
+	height: 410px;
+	background: url(../img/mac.png) center no-repeat;
+	position: absolute;
+	top: 291px;
+}
+
+.mac a {
+	font: 16px/60px Tahoma, Arial, Verdana, sans-serif;
+	color: #5c37ef;
+	display: block;
+	text-align: center;
+	margin-top: 141px;
+}
+
+/* ------------------------ Основной контент ------------------- */
+
+.content {
+	width: 800px;
+	background-color: #fff;
+	padding: 255px 102px 115px 101px;
+}
+
+.name-place {
+	color: #a8a8a8;
+}
+
+/* Серая плашка */
+
+.grey {
+	height: 69px;
+	background-color: #f7f8fa;
+	text-align: center;
+	padding: 23px 0 28px;
+	margin-bottom: 41px;
+	-webkit-border-radius: 4px;
+	   -moz-border-radius: 4px;
+			border-radius: 4px;
+}
+
+.grey p {
+	line-height: 36px;
+}
+
+.lead {
+	font-size: 24px;
+}
+
+/* Левый столбец */
+
+.left {
+	width: 389px;
+	float: left;
+}
+
+.left h3 {
+	margin-bottom: 26px;
+}
+
+.left li + li {
+	padding-top: 13px;
+}
+
+/* Правый столбец */
+
+.right {
+	float: right;
+	width: 391px;
+	margin-left: 20px;
+	line-height: 36px;
+}
+
+.right h3 {
+	padding-bottom: 10px;
+}
+
+.right p {
+	padding-bottom: 5px;
+}
+
+.green {
+	font: bold 40px Arial, Verdana, sans-serif;
+	color: #1ea01e;
+	padding-top: 14px;
+}
+
+/* Форма запроса */
+
+.request-form {
+	clear: both;
+	padding: 26px 140px 31px;
+	text-align: center;
+	background-color: #fff4b3;
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+			border-radius: 3px;
+	font-size: 14px;
+	line-height: 32px;
+}
+
+.request-input {
+	height: 40px;
+	text-align: left;
+	padding-bottom: 16px;
+}
+
+.request-input label {
+	display: inline-block;
+	padding-top: 4px;
+}
+
+.request-field {
+	float: right;
+}
+
+/* Поле телефона заполнено неверно */
+
+.incorrect {
+	padding-bottom: 0;
+}
+
+.incorrect input {
+	background-color: #eef0e5;
+}
+
+.error { /* Сообщение об ошибке */
+	display: none;
+	padding: 6px 0 8px 163px;
+	text-align: left;
+	color: #f00;
+}
+
+/* Стили для автозаполнения форм плагином jQuery-Autocomplete https://www.devbridge.com/sourcery/components/jquery-autocomplete/ */
+
+.autocomplete-suggestions {
+	background-color: #fff;
+	/* Объединение теней поля ввода и области с вариантами автозаполнения */
+	-webkit-box-shadow: -10px 0 10px -10px rgba(39,199,252,1),
+						-10px 10px 10px -10px rgba(39,199,252,1),
+						10px 0 10px -10px rgba(39,199,252,1),
+						10px 10px 10px -10px rgba(39,199,252,1);
+	   -moz-box-shadow: -10px 0 10px -10px rgba(39,199,252,1),
+						-10px 10px 10px -10px rgba(39,199,252,1),
+						10px 0 10px -10px rgba(39,199,252,1),
+						10px 10px 10px -10px rgba(39,199,252,1);
+			box-shadow: -10px 0 10px -10px rgba(39,199,252,1),
+						-10px 10px 10px -10px rgba(39,199,252,1),
+						10px 0 10px -10px rgba(39,199,252,1),
+						10px 10px 10px -10px rgba(39,199,252,1);
+			
+	margin-left: 1px;
+	margin-top: -10px;
+	padding-top: 10px;
+}
+
+.autocomplete-suggestion {
+	font: 14px/36px Arial, Verdana, sans-serif;
+	cursor: default;
+	padding-left: 15px;
+}
+
+.autocomplete-suggestion:first-child {
+	border-top: 1px solid #e5e5e5;
+}
+
+.autocomplete-suggestions strong {
+	font-weight: normal;
+}
+
+.autocomplete-selected {
+	background-color: #f7f8fa;
+}
+
+/* Кнопка подтверждения формы */
+
+.btn {
+	background-color: #0d972b;
+	font-size: 16px;
+	color: #fff;
+}
+
+.btn-disabled { /* Кнопка неактивна */
+	background-color: #b6d88a;
+}
+
+/* Текст под формой запроса */
+
+.addition {
+	margin-top: 29px;
+}
+
+/* ------------------------ Подвал ------------------- */
+
+footer {
+	width: 100%;
+	height: 60px;
+	background-color: #000;
+	position: absolute;
+	bottom: 0;
+}
+
+.logo-footer {
+	width: 963px;
+	margin: 19px auto 12px;
+}

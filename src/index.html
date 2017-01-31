@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang = "ru">
+	<head>
+		<meta charset = "utf-8" />
+		
+		<title>БИБОСС</title>
+
+		<meta name="description" content="Сайт компании БИБОСС">
+		<meta name="keywords" content="БИБОСС, франшиза, баллы, бесплатные баллы" />
+		<meta name="author" content="Albina (albina-i-f)" />
+		
+		<meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+
+		<meta property="og:image" content="img/favicon/og_image.png">
+
+		<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+		<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-touch-icon-152x152.png">
+		
+		<link rel = "stylesheet" href = "css/style.css" />
+		
+		<!--[if lt IE 9]>
+			<link rel = "stylesheet" href = "css/ie.css" />
+			
+			<script src = "libs/html5shiv/es5-shim.min.js"></script>
+			<script src = "libs/html5shiv/html5shiv.min.js"></script>
+			<script src = "libs/html5shiv/html5shiv-printshiv.min.js"></script>
+			<script src = "libs/PIE/PIE.js"></script>
+		<![endif]-->
+		
+		<script src = "libs/modernizr/modernizr-custom.js"></script>
+		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		
+		<!--[if lte IE 9]>
+			<script src = "libs/placeholders/placeholders.jquery.min.js"></script>
+		<![endif]-->
+		
+		<script src = "libs/maskedinput/jquery.maskedinput.min.js"></script>
+		<script src = "libs/autocomplete/jquery.autocomplete.min.js"></script>
+		
+		<script src = "js/validation.js"></script>
+		<script src = "js/autocomplete.js"></script>
+		<script src = "js/common.js"></script>
+	</head>
+	
+	<body>
+	<!--Оболочка -->
+		<div id = "wrap">
+		<!--Шапка -->
+			<header>
+				<div class = "logo">
+					<a href = "#">
+						<img src = "img/logo.gif" alt = "БИБОСС"/>
+					</a>
+				</div>
+				<div class = "back rounded">
+					<h2>Поставь ссылку на БИБОСС</h2>
+					<h1>Заработай баллы!</h1>
+				</div>
+				<div class = "mac">
+					<a href = "#">Франшиза Dunkin’ Donuts на БИБОСС</a>
+				</div>
+			</header>
+		<!--Конец шапки -->
+		<!--Основной контент -->
+			<div class = "content">
+				<p>БИБОСС даёт возможность получить бесплатные баллы – нужно лишь разместить на сайте компании любую из ссылок:</p>
+				<ul>
+					<li>Текстовая ссылка «Франшиза <span class = "name-place">[Название]</span> на БИБОСС»</li>
+					<li>Текстовая ссылка «Наша франшиза на БИБОСС»</li>
+					<li>Кнопка “Нравится франшиза” + счетчик популярности</li>
+				</ul>
+			<!--Серая плашка -->
+				<div class = "grey rounded">
+					<p>Зачем нужны <a href = "#">баллы</a>?</p>
+					<p class = "lead">Больше баллов — выше позиция в выдаче категории</p>
+				</div>
+			<!--Конец серой плашки -->
+			<!--Левый столбец -->
+				<div class = "left">
+					<h3>Правила размещения ссылки</h3>
+					<ul>
+						<li>Ссылка должна быть индексируемой (без тегов &lt;noindex&gt; и &lt;nofollow&gt;)</li>
+						<li>Ссылка должна быть читаемой, не скрытой от глаз посетителя сайта,</li>
+						<li>Ссылка должна быть размещена на странице сайта, посвящённой франчайзингу,</li>
+						<li>При размещении ссылок на другие порталы о франчайзинге – баллы обнуляются.</li>
+					</ul>
+				</div>
+			<!--Конец левого столбца -->
+			<!--Правый столбец -->
+				<div class = "right">
+					<h3>Стоимость ссылки</h3>
+					<p class = "green">200 баллов</p>
+					<p>ТиЦ Вашего сайта от 10</p>
+					<p class = "green">50 баллов</p>
+					<p>ТиЦ Вашего сайта от 0 до 10</p>
+				</div>
+			<!--Конец правого столбца -->
+			<!--Форма запроса -->
+				<form class = "request-form rounded" name = "request-form" action = "#" method = "post" autocomplete = "off">
+					<h4>ПОЛУЧИТЬ ССЫЛКУ</h4>
+					<div class = "request-input">
+						<label for = "name">Ваше имя</label>
+						<input id = "name" class = "request-field rounded" type = "text" name = "name" value = "" placeholder = "Представьтесь, пожалуйста" tabindex = "1" />
+					</div>
+					<div class = "request-input">
+						<label for = "tel">Номер телефона</label>
+						<input id = "tel" class = "request-field rounded" type = "tel" name = "tel" value = "" placeholder = "Для начисления баллов и связи с Вами" tabindex = "2" />
+					</div>
+					<p class = "error">Укажите правильный телефон</p>
+					<div class = "request-input">
+						<label for = "franchise">Название франшизы</label>
+						<input id = "franchise" class = "request-field rounded" type = "text" name = "franchise" value = "" placeholder = "Например, Subway" tabindex = "3" />
+					</div>
+					<button class = "btn btn-disabled rounded">Получить ссылку</button>
+				</form>
+			<!--Конец формы запроса -->
+				<div class = "addition">
+					<p><strong>Это еще не все...</strong> Вы можете заработать дополнительные баллы, если разместите на своём сайте новость, интервью или статью БИБОСС о Вашей компании с активной ссылкой! 50 баллов за активную ссылку на новость!</p>
+				</div>
+			</div>
+		<!--Конец основного контента -->
+		<!--Подвал -->
+			<footer>
+				<div class = "logo-footer">
+					<a href = "#">
+						<img src = "img/logo_footer.gif" alt = "" />
+					</a>
+				</div>
+			</footer>
+		<!--Конец подввала -->
+		</div>
+	<!--Конец оболочки -->
+	</body>
+</html>

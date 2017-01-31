@@ -1,0 +1,9 @@
+/* ----------- Стили для браузера Internet Explorer версий ниже 9 ----------- */
+
+.rounded {
+	position: relative;
+}
+
+.request-field {
+	line-height: 38px;
+}
